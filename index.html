@@ -7,7 +7,7 @@
 <meta name="description" content="Pintura de paredes, tetos, portas, fachadas e pinturas decorativas. Agilidade, capricho e preço justo. Veja o antes e depois e peça seu orçamento.">
 <meta property="og:title" content="Relaxa, a gente cuida da pintura!">
 <meta property="og:description" content="Veja o antes e depois e peça já seu orçamento pelo WhatsApp.">
-<meta property="og:image" content="1-depois.webp">
+<meta property="og:image" content="hero-2-depois.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
@@ -45,15 +45,14 @@ h1 em{font-style:normal;color:var(--k)}
 .hero p.s{margin:26px 0 32px;font-size:clamp(1.1rem,2.6vw,1.4rem);font-weight:500;color:#333;max-width:30ch}
 .hero .acts{display:flex;flex-wrap:wrap;gap:22px;align-items:center}
 .hero .acts a.l{font-weight:700;text-underline-offset:6px}
-.stack{position:relative;min-height:460px}
-.stack figure{position:absolute;border-radius:22px;overflow:hidden;background:var(--w);box-shadow:0 40px 70px -35px rgba(0,0,0,.45)}
-.stack figure:nth-child(1){width:80%;top:0;left:0}
-.stack figure:nth-child(1) img{aspect-ratio:4/5}
-.stack figure:nth-child(2){width:52%;bottom:0;right:0;border:7px solid var(--w);border-radius:26px}
-.stack figure:nth-child(2) img{aspect-ratio:1/1}
-.stack img{display:block;width:100%;object-fit:cover}
-.stack figcaption{position:absolute;top:14px;left:14px;background:var(--w);color:var(--b);border-radius:999px;padding:5px 13px;font:700 .75rem Archivo,sans-serif;letter-spacing:.08em;text-transform:uppercase}
-@media(min-width:900px){.hero .wrap{grid-template-columns:1fr 1.05fr}.stack{min-height:700px}}
+.hero .wrap{max-width:1280px}
+.stack{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+.stack figure{position:relative;margin:0;border-radius:24px;overflow:hidden;background:#dfe5ee;box-shadow:0 40px 70px -35px rgba(0,0,0,.5)}
+.stack figure:first-child{margin-top:44px}
+.stack img{display:block;width:100%;aspect-ratio:9/16;object-fit:cover}
+.stack figcaption{position:absolute;left:14px;bottom:14px;background:rgba(10,10,10,.78);color:var(--w);border-radius:999px;padding:8px 18px;font:700 .85rem Archivo,sans-serif;letter-spacing:.1em;text-transform:uppercase;backdrop-filter:blur(8px)}
+.stack figure:last-child figcaption{background:var(--b)}
+@media(min-width:900px){.hero .wrap{grid-template-columns:1fr 1.15fr}.stack{gap:20px}.stack figure:first-child{margin-top:64px}.stack figcaption{left:18px;bottom:18px;font-size:.95rem;padding:10px 22px}}
 
 /* TICKER */
 .tick{overflow:hidden;white-space:nowrap;border-block:1px solid var(--ln)}
@@ -139,9 +138,9 @@ footer{background:var(--k);color:rgba(255,255,255,.8);padding:24px 0;font-size:.
         <a class="l" href="#antes-depois">Ver antes e depois</a>
       </div>
     </div>
-    <div class="stack" aria-hidden="true">
-      <figure><img src="1-depois.webp" alt=""><figcaption>Depois</figcaption></figure>
-      <figure><img src="3-depois.webp" alt=""><figcaption>Depois</figcaption></figure>
+    <div class="stack">
+      <figure><img src="hero-1-antes.webp" alt="Fachada de loja com grafite e tinta desgastada, antes da pintura" fetchpriority="high"><figcaption>Antes</figcaption></figure>
+      <figure><img src="hero-2-depois.webp" alt="Mesma fachada pintada de verde, com a porta de enrolar renovada" fetchpriority="high"><figcaption>Depois</figcaption></figure>
     </div>
   </div>
 </header>
@@ -155,7 +154,7 @@ footer{background:var(--k);color:rgba(255,255,255,.8);padding:24px 0;font-size:.
     <div class="grid" id="grid"></div>
     <div class="mid">
       <h3>Gostou? A sua é a próxima.</h3>
-      <a class="btn w" href="#" data-wa>Chamar no WhatsApp</a>
+      <a class="btn w" href="#" data-wa>Chamar no WhatsApp | William Marcom</a>
     </div>
   </div>
 </section>
@@ -163,7 +162,7 @@ footer{background:var(--k);color:rgba(255,255,255,.8);padding:24px 0;font-size:.
 <section class="sec blue">
   <div class="wrap">
     <h2>O que a gente pinta</h2>
-    <p class="lead">Do furinho na parede à fachada inteira.</p>
+    <p class="lead">De paredes irregulares, portas e quartos à fachada inteira.</p>
     <div class="svc">
       <div>Paredes e tetos</div>
       <div>Correção de furos e imperfeições<small>Parede lisa antes da tinta entrar.</small></div>
@@ -195,7 +194,7 @@ footer{background:var(--k);color:rgba(255,255,255,.8);padding:24px 0;font-size:.
   <div class="wrap">
     <h2>Peça já seu orçamento!</h2>
     <a class="btn w" href="#" data-wa>Chamar no WhatsApp</a>
-    <p>Whatsapp: (11) 95429-8099</p>
+    <p>Whatsapp:(11) 95429-8099 - William Marcom</p>
   </div>
 </section>
 </main>
